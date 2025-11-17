@@ -1,0 +1,23 @@
+@media screen {
+  .print-only {
+    display: none;
+  }
+}
+
+@media print {
+  body {
+    background-color: white;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block;
+  }
+
+  .cheque-editor-container img {
+    display: none; /* Hide the background image when printing */
+  }
+}
